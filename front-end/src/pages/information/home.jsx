@@ -15,6 +15,17 @@ import coinPic from "../../img/moneyIcon.png"
 import groupPeople1 from "../../img/GroupPeople1.jpg"
 import manComputer from "../../img/manComputer.jpg"
 import phoneChart from "../../img/phone.mp4"
+import tradeMetal from '../../img/trade-metals.png'
+import tradeForex from '../../img/trade-forex.png'
+import trdaeSharedIndex from '../../img/trade-pie.png'
+import tradeStocks from '../../img/trade-stocks.png'
+import tradeEnergy from '../../img/trade-oil-barrel.png'
+import tradeCrypto from  '../../img/trade-cryptocurrencies.png'
+import commodites from '../../img/trade-commondities.png'
+
+
+
+
 
 
 import { Link } from "react-router-dom"
@@ -44,40 +55,56 @@ export const Home = () =>{
               <div className="row g-4">
                 <div className="col-lg-3 col-md-4 col-sm-6">
                   <div>
-                    <img width='150px'  src={featuresIcon1} alt="" />
-                    <div className="pt-4">
-                      <p className="font-weight-700 uppercase pb-3">Constant Innovation</p>
-                      <p>AmanlightEquity is always evolving, consistently enhancing the trading experience to make it seamless, intuitive, and user-friendly.</p>
+                    <div className="home-features-img">
+                      <img width='150px'  src={featuresIcon1} alt="" />
+                    </div>
+                    <div className="pt-4 home-features-text">
+                      <div>
+                        <p className="font-weight-700 uppercase pb-3">Constant Innovation</p>
+                        <p>AmanlightEquity is always evolving, consistently enhancing the trading experience to make it seamless, intuitive, and user-friendly.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-4 col-sm-6">
                   <div>
-                    <img width='90px' src={featuresIcon2} alt="" />
-                    <div className="pt-4">
-                      <p className="font-weight-700 uppercase pb-3">Trustworthy & Transparent</p>
-                      <p>Our platform is built on a foundation of trust, offering transparent processes and clear communication to ensure you always know where your investments stand.</p>
+                    <div className="home-features-img">
+                      <img width='90px' src={featuresIcon2} alt="" />
+                    </div>
+                    <div className="pt-4 home-features-text">
+                      <div>
+                        <p className="font-weight-700 uppercase pb-3">Trustworthy & Transparent</p>
+                        <p>Our platform is built on a foundation of trust, offering transparent processes and clear communication to ensure you always know where your investments stand.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-4 col-sm-6">
                   <div>
-                    <img width='70px' src={featuresIcon3} alt="" />
-                    <div className="pt-4">
-                      <p className="font-weight-700 uppercase pb-3">Advanced Security Measures</p>
-                      <p>We employ industry-leading security protocols, including two-factor authentication and encryption, to safeguard your funds and personal data from any threats.</p>
+                    <div className="home-features-img">
+                      <img width='70px' src={featuresIcon3} alt="" />
+                    </div>
+                    <div className="pt-4 home-features-text">
+                      <div>
+                        <p className="font-weight-700 uppercase pb-3">Advanced Security Measures</p>
+                        <p>We employ industry-leading security protocols, including two-factor authentication and encryption, to safeguard your funds and personal data from any threats.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div className="col-lg-3 col-md-4 col-sm-6">
                   <div>
-                    <img width='80px' src={featuresIcon4} alt="" />
-                    <div className="pt-4">
-                      <p className="font-weight-700 uppercase pb-3">PURE ECN</p>
-                      <p>AmaniLightEquity offers Electronic Communication Network technology, which seeks to guarantee that traders always trade under the best trading conditions.</p>
+                    <div className="home-features-img">
+                      <img width='80px' src={featuresIcon4} alt="" />
+                    </div>
+                    <div className="pt-4 home-features-text">
+                      <div>
+                        <p className="font-weight-700 uppercase pb-3">PURE ECN</p>
+                        <p>AmaniLightEquity offers Electronic Communication Network technology, which seeks to guarantee that traders always trade under the best trading conditions.</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -172,10 +199,10 @@ export const Home = () =>{
                 </div>
 
                 <div className="col-md-6">
-                  <div>
+                  <div className="home-live-chart-text">
                     <p className="site-header pb-2">Using Live Chat to Enhance Your Investment</p>
                     <p className="">AmaniLightEquity is dedicated to providing excellent communication and personalized support to investors throughout the investment process. As part of this commitment, we have introduced a live chat feature that makes it easier for investors to connect with us <br /> This tool has proven to be incredibly successful, providing numerous benefits to our clients. With live chat, investors can get their questions answered quickly and easily, making the investment process much smoother.</p>
-                    <div className="d-flex pb-3">
+                    <div className="d-flex py-3 home-live-chart-icon">
                       <div className='blue-text d-flex pt-2 pb-4 pe-2'>
                         < FontAwesomeIcon className='md-text' icon={faBuildingColumns}/>
 
@@ -231,6 +258,73 @@ export const Home = () =>{
               <div className="container-lg">
                 <div className="text-center font-weight-700 site-header">
                   <p>Tradable Assets <br /> Invest in Currencies, CFD's, Cryptocurrencies, Forex e.t.c</p>
+                </div>
+
+                <div className="home-trade-boxes-container mt-5">
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeMetal} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Precious Metals</p>
+                    </div>
+                  </Link>
+
+             
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeForex} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Forex</p>
+                    </div>
+                  </Link>
+
+
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={trdaeSharedIndex} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Shared Indexes</p>
+                    </div>
+                  </Link>
+
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeStocks} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Stocks</p>
+                    </div>
+                  </Link>
+
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeEnergy} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Energy Carriers</p>
+                    </div>
+                  </Link>
+
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeCrypto} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Cryptocurrencies</p>
+                    </div>
+                  </Link>
+
+                  <Link className="Link home-trade-boxes">
+                    <div className="">
+                      <div className="d-flex justify-content-center">
+                        <img src={tradeForex} alt="" width='50px'/>
+                      </div>
+                      <p className="light-text font-weight-700 pt-3 text-center">Commodities</p>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
