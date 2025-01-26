@@ -56,6 +56,10 @@ p, h1, h2, h3, h4, h5, h6{
 .font-weight-700{
   font-weight: 700;
 }
+
+.font-weight-500{
+  font-weight: 500;
+}
 .light-background3{
   background-color: #F6F5F2;
 }
@@ -100,6 +104,9 @@ ul,  li{
 
 .light-text{
   color: #a0a0a0;
+}
+.light-text-2{
+  color: #737b7d;
 }
 
 
@@ -252,6 +259,10 @@ ul,  li{
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   transition: ease all 1.5s;
 }
+.box-shadow-hover:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
 
 .display-block{
   display: block;
@@ -303,6 +314,8 @@ ul,  li{
   background: #18122B;
 
 }
+
+.box-shadow
 
 .overlay-background {
   position: fixed;

@@ -180,6 +180,7 @@ export const AllDataProvider =  ({ children }) =>{
 
   const [investmentPlanCount, setInvestmentPlanCount] = useState(0)
   const [investmentPlanData, setInvestPlanData] = useState([])
+  const [recentInvementPlanData, setRecentInvementPlanData] = useState([])
   const [investemmentPlanLoder, setInvestmentPlanLoader] = useState(true)
   const [investmentPlanSearch, setInvestmentPlanSearch] = useState('')
 
@@ -1876,7 +1877,7 @@ export const AllDataProvider =  ({ children }) =>{
       method: 'GET',
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${authTokens.access}`
+        // Authorization: `Bearer ${authTokens.access}`
       },
     })
 
@@ -1890,6 +1891,8 @@ export const AllDataProvider =  ({ children }) =>{
 
       // const sortedData = data.sort((a, b) => b.id - a.id);
       setInvestPlanData(data)
+      const recentData = data.slice(0, 2);
+      setRecentInvementPlanData(recentData)
       setInvestmentPlanLoader(false)
     }else{
       setInvestmentPlanLoader(false)
@@ -2591,6 +2594,8 @@ export const AllDataProvider =  ({ children }) =>{
         setInvestmentPlanCount,
         investmentPlanData, 
         setInvestPlanData,
+        recentInvementPlanData,
+        setRecentInvementPlanData,
         InvestmentPlanFunction,
         filterInvestmentPlan,
         investemmentPlanLoder,

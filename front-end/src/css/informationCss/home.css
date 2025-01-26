@@ -55,6 +55,32 @@
 .home-trade-boxes:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.home-investment-plan-boxes{
+    border: 1px solid #17153b;
+    border-radius: 5px;
+}
+.home-investment-header-container{
+    max-width: 600px;
+}
+.home-investment-plan-sub-headers{
+    font-family: serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.home-investment-plan-dark-text{
+    color: #17153b;
+}
+
+.home-faq-plus{
+    min-width: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 
 @media screen and (max-width: 765px){
     .home-crypto-banner{
@@ -99,6 +125,18 @@
         text-align: center;
         
     
+    }
+
+    .responsive-centralized-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-meta5-text{
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
   
   

@@ -108,8 +108,8 @@
 }
 
 .home-cover-carousel-button {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 50%;
@@ -119,7 +119,7 @@
 
 .home-cover-carousel-button.active {
   width: 30px; /* Wider when active */
-  height: 15px; /* Retain height for active */
+  height: 10px; /* Retain height for active */
   background-color: #4A249D;
   border-radius: 7px; /* Slightly rounded for active */
   transform: scale(1.2);
