@@ -1,6 +1,7 @@
 
 import { Link, useLocation } from 'react-router-dom'
 import '../css/componentCss/navbar.css'
+import '../css/style.css'
 import '../css/informationCss/site.css'
 import { useContext, useState } from 'react'
 import { use } from 'react'

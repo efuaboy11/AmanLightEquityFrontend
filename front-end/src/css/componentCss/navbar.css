@@ -96,7 +96,18 @@
 .client-sidebar-active-link{
     background: #6A3C8E; 
 }
-  
+
+.nav-overlay-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 100000;
+    transition: all 0.5s;
+  }
 
 .client-sidebar-btn {
     --color: #4A249D; /* Default purple color */

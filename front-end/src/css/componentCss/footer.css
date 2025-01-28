@@ -1,0 +1,13 @@
+.footer-bg{
+    background-color: #1D1616;
+    color: #fff;
+}
+.footer-d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+}
+.footer-line{
+    border-bottom: 1px solid #a0a0a0;
+}

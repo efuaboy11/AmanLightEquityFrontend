@@ -4,7 +4,7 @@ import { Navbar } from "../../component/navbar"
 import AuthContext from "../../context/AuthContext"
 import { HomeCoverCarousel } from "../../swiperContainer/HomeCoverSwiper"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBuildingColumns, faMinus, faPlus, faScaleBalanced, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons"
+import { faBuildingColumns, faMinus, faPlus, faQuoteLeft, faScaleBalanced, faTriangleExclamation } from "@fortawesome/free-solid-svg-icons"
 import featuresIcon1 from '../../img/f.svg'
 import featuresIcon2 from '../../img/features-icon1.svg'
 import featuresIcon3 from '../../img/features-icon3.svg'
@@ -32,6 +32,9 @@ import clientProtection1 from '../../img/client-protection-1.png'
 import clientProtection2 from '../../img/client-protection-2.png'
 import clientProtection3 from '../../img/client-protection-3.png'
 import faq from '../../img/help-desk.jpg'
+import customer1 from '../../img/customer1.jpg'
+import customer2 from '../../img/customer-2.jpg'
+import customer3 from '../../img/customer3.jpg'
 
 
 
@@ -40,6 +43,8 @@ import faq from '../../img/help-desk.jpg'
 
 import { Link } from "react-router-dom"
 import AllDataContext from "../../context/Alldata"
+import Carousel from "../../component/carousel"
+import { Footer } from "../../component/footer"
 
 
 export const Home = () =>{
@@ -145,7 +150,7 @@ export const Home = () =>{
         <HomeCoverCarousel />
 
         <div>
-          <section className="site-section-container">
+          <section className="py-5">
             <div className="container-lg">
               <div className="row g-4">
                 <div className="col-lg-3 col-md-4 col-sm-6">
@@ -847,12 +852,96 @@ export const Home = () =>{
 
           </section>
 
+          <section className="site-section-container">
+            <div className="container-lg">
+              <div className="text-center">
+                <p className="site-primary-text font-weight-700">OUR REVIEWS</p>
+                <p className="site-header font-weight-700">More Than 20,000+ Happy Customers Trust <br /> Our Services</p>
+              </div>
+
+              <div className="row gx-3 gy-4 pt-5">
+                <div className="col-lg-4 col-md-6">
+                  <div className="box-shadow p-4 border-radius-5px">
+                    <div className="row pb-4">
+                      <div className="col-10">
+                        <div className="d-flex">
+                          <div className="d-flex font-weight-700">
+                            <img width='70px' height='70px' className="border-radius-50" src={customer2} alt="" />
+                            <div className="ps-4">
+                              <p className="sm-text font-weight-700">Jay Mark</p>
+                              <p className="light-text-2 font-weight-700">Director, BAT</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-2">
+                        <FontAwesomeIcon className="lg-text site-primary-text" icon={faQuoteLeft}/>
+                      </div>
+                    </div>
+                    <p className="light-text-2 italic-text">AmanlightEquity has completely transformed how I manage my investments. Their platform is intuitive, and the customer support is always there to guide me. I’ve seen consistent returns and feel confident in their secure trading environment.</p>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                  <div className="box-shadow p-4 border-radius-5px">
+                    <div className="row pb-4">
+                      <div className="col-10">
+                        <div className="d-flex">
+                          <div className="d-flex font-weight-700">
+                            <img width='70px' height='70px' className="border-radius-50" src={customer1} alt="" />
+                            <div className="ps-4">
+                              <p className="sm-text font-weight-700">Sophia Taylor</p>
+                              <p className="light-text-2 font-weight-700">Financial Analyst</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-2">
+                        <FontAwesomeIcon className="lg-text site-primary-text" icon={faQuoteLeft}/>
+                      </div>
+                    </div>
+                    <p className="light-text-2 italic-text">As a financial analyst, I’ve worked with several brokers, but AmanlightEquity stands out. Their transparent processes, innovative tools, and reliable support make them my top choice for all my trading and investment needs.</p>
+                  </div>
+                </div>
+
+
+                <div className="col-lg-4 col-md-6">
+                  <div className="box-shadow p-4 border-radius-5px">
+                    <div className="row pb-4">
+                      <div className="col-10">
+                        <div className="d-flex">
+                          <div className="d-flex font-weight-700">
+                            <img width='70px' height='70px' className="border-radius-50" src={customer3} alt="" />
+                            <div className="ps-4">
+                              <p className="sm-text font-weight-700">James Carter</p>
+                              <p className="light-text-2 font-weight-700">Entrepreneur</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="col-2">
+                        <FontAwesomeIcon className="lg-text site-primary-text" icon={faQuoteLeft}/>
+                      </div>
+                    </div>
+                    <p className="light-text-2 italic-text">I’ve been with AmanlightEquity for over a year, and it’s been an incredible journey. Their investment plans are well-structured, and the Negative Balance Protection gives me peace of mind when trading in volatile markets. Highly recommend!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+          </section>
+
 
 
           
 
 
         </div>
+
+        <Footer />
       </div>
 
     </div>
