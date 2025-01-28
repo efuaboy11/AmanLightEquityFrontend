@@ -217,6 +217,133 @@ export const Footer = () =>{
               </div>
             </div>
           </div>
+          
+          <div className="footer-links-container mt-5">
+            <div className="footer-links-sub-container mt-4">
+              <div>
+                <p className="sm-text light-text-2 font-weight-700 pb-3">MARKETS</p>
+                <div className='my-2'>
+                  <Link className="footer-links">Forex</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Precious Metals</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Shared Indexes</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Energy Carriers</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Cryptocurrencies</Link>
+                </div>
+              </div>
+            </div>
+            
+            <div className="footer-links-sub-container mt-4">
+              <div>
+                <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Trading Platforms</p>
+                <div className='my-2'>
+                  <Link className="footer-links">Sign In</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Create Account</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Deposit Method</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">General Fees</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="footer-links-sub-container mt-4">
+              <div>
+                <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Learn To Trade</p>
+                <div className='my-2'>
+                  <Link className="footer-links">Risk Disclosure</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Margin Calls</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Complaints Procedure</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Information Security</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="footer-links-sub-container mt-4">
+              <div>
+                <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Buy Bitcoin</p>
+                <div className='my-2'>
+                  <Link className="footer-links">Coinbase</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Gemini</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">BlockFi</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Kraken</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">eToro</Link>
+                </div>
+              </div>
+            </div>
+
+            <div className="footer-links-sub-container mt-4">
+              <div>
+                <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">About Company</p>
+                <div className='my-2'>
+                  <Link className="footer-links">About us</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Contact us</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Affiliate Program</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Privacy Policy</Link>
+                </div>
+
+                <div className='my-2'>
+                  <Link className="footer-links">Terms and Conditions</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='pt-5'>
+            <p className="sm-text light-text">AmanilightEquity is regulated by the International Financial Services Commission of Belize, as well as the Cyprus Securities and Exchange Commission, licensed by the Financial Services Board (FSB) of Switzerland. The company is also registered with the Financial Conduct Authority of the UK.</p>
+            <p className="sm-text-2 light-text pt-2 italic-text"><span className="font-weight-700">NOTE: </span>Trading in Forex and Contracts for Difference (CFDs), which are leveraged products, is highly speculative and involves substantial risk of loss. It is possible to lose all your capital. Therefore AmaniLightEquity is guaranteed to give you your capital when the market may go down as well as up.
+              AmaniLightEquity Limited provides it's services to global citizens. Copyright © 2025 AmaniLightEquity. All Rights Reserved. Terms and Conditions | Risk Disclosure.
+              Understand that prices displayed on the website may be affected by changes in currency exchange rate and price movements thereby affecting your investment return.
+            </p>
+          </div>
         </div>
 
       </div>
