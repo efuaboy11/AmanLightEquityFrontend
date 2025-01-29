@@ -223,7 +223,7 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3">MARKETS</p>
                 <div className='my-2'>
-                  <Link className="footer-links">Forex</Link>
+                  <Link to='/forex/' className="footer-links">Forex</Link>
                 </div>
 
                 <div className='my-2'>

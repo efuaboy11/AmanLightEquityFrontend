@@ -156,9 +156,29 @@
 
 }
 
-.tt{
-    width: 134%;
-    max-width: 500px;
-    position: static;
-    background: none;
+.site-boxes{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: ease all 1.5s;
+    border-radius: 5px;
+}
+.site-boxes:hover{
+    background-color: #4A249D;
+    color: #fff;
+
+}
+
+.site-boxes-header{
+    color: inherit;
+}
+
+.site-boxes:hover .site-boxes-header{
+    color: #fff;
+}
+
+.site-boxes-text{
+    color: #737b7d;
+}
+
+.site-boxes:hover .site-boxes-text{
+    color: #F6F5F5;
 }

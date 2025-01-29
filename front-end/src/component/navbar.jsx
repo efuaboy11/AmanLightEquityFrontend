@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import '../css/componentCss/navbar.css'
 import '../css/style.css'
 import '../css/informationCss/site.css'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { use } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faBarsStaggered, faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
@@ -15,6 +15,9 @@ export const Navbar = () =>{
     toggleClientSidebar,
 
   } = useContext(AuthContext)
+
+  const [showDashboardBtn, setShowDashboardBtn] = useState(false)
+  const [dashLink, setDasLink] = useState('')
   
   const [overlay, setOverlay] = useState(false)
   const [assetDropdown, setAssetDropdown] = useState(false)
@@ -194,6 +197,15 @@ export const Navbar = () =>{
     setSidebarTradeDropdown(false)
     setSidebarCryptoDropdown(false)
   }
+
+  useEffect(() =>{
+    if(sessionStorage.getItem('tokenActive') === 'true'){
+      setShowDashboardBtn(true)
+    }
+    setDasLink(sessionStorage.getItem('dashLink'))
+    
+
+  }, [])
   return(
     <div className={`${overlay ? 'overlay-background' : ''}`}>
       <div className="nav-shadow nav-bar">
@@ -260,16 +272,23 @@ export const Navbar = () =>{
 
               <div className="col-3">
                 
-                <div className='d-flex'>
-                  <div className='me-3'>
-                    <Link className='site-btn font-bold'>Create Account</Link>
-                  </div>
-
+                {showDashboardBtn ? (
                   <div>
-                    <Link className='site-inverse-btn font-bold'>Sign In</Link>
+                     <Link to={`${dashLink}`} className='site-inverse-btn font-bold'>Dashbaord</Link>
                   </div>
-                  
-                </div>
+                ) : (
+                  <div className='d-flex'>
+                    <div className='me-3'>
+                      <Link to='/register' className='site-btn font-bold'>Create Account</Link>
+                    </div>
+
+                    <div>
+                      <Link to='/login' className='site-inverse-btn font-bold'>Sign In</Link>
+                    </div>
+                    
+                  </div>
+                )}
+
 
               </div>
             </div>
@@ -295,7 +314,7 @@ export const Navbar = () =>{
                 {assetDropdown &&
                   <ul className={`nav-sublink-container `}>
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/forex/' className='nav-sublink'>
                         <p>Forex</p>                
                       </Link>
                     </li>
@@ -604,8 +623,8 @@ export const Navbar = () =>{
 
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarAssetDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/plan/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/plan/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/forex/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/forex/">
                           <div className="d-flex ms-3 py-2">
                             <p>Forex</p> 
                           </div>
@@ -1061,20 +1080,26 @@ export const Navbar = () =>{
               
             </ul>
 
-            <div className="d-flex justify-content-center pt-4">
-              <div>
-                <div className='d-flex'>
-                  <div className='me-3'>
-                    <Link className='client-sidebar-btn  font-bold'>Create Account</Link>
+            {showDashboardBtn ? (
+                  <div className='d-flex justify-content-center pt-4'>
+                     <Link to={`${dashLink}`} className='client-sidebar-btn  font-bold'>Dashbaord</Link>
                   </div>
-
-                  <div>
-                    <Link className='client-sidebar-btn  font-bold'>Sign In</Link>
-                  </div>
-                  
+                ) : (
+                  <div className="d-flex justify-content-center pt-4">
+                    <div>
+                      <div className='d-flex'>
+                        <div className='me-3'>
+                          <Link className='client-sidebar-btn  font-bold'>Create Account</Link>
+                        </div>
+      
+                        <div>
+                          <Link className='client-sidebar-btn  font-bold'>Sign In</Link>
+                        </div>
+                        
+                      </div>
+                    </div>
                 </div>
-              </div>
-            </div>
+                )}
           </div>
         </div>
       </div>

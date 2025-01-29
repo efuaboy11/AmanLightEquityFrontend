@@ -264,6 +264,10 @@ ul,  li{
 
 }
 
+.box-shadow-2{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
 .display-block{
   display: block;
 }
@@ -598,6 +602,14 @@ table{
   background-color: #114232;
   color: #fff;
   border: 1px solid #fff;
+}
+
+
+@media screen and (max-width: 700px){
+  .lg-text{
+    font-size: 30px;
+  }
+
 }
 
 

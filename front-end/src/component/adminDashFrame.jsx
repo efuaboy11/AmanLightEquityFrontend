@@ -892,7 +892,7 @@ export const AdminDashFrame = () =>{
             <nav className="text-light d-flex align-items-center justify-content-between position-sticky">
               <div className="mx-3"><FontAwesomeIcon icon={faBars} onClick={toggleShowSidebar} className=" dashboard-menu-bar cursor-pointer"/></div>
               <div className="d-flex align-items-center">
-                <Link className='light-link dashboard-content-site-link'>
+                <Link to='/' className='light-link dashboard-content-site-link'>
                   <div className='d-flex pe-5 me-5'>
                     <div>
                       <FontAwesomeIcon icon={faLock}/>

@@ -133,9 +133,14 @@ export const Home = () =>{
   }
   
 
-
+ const [isDashboardActive, setIsDashboardActive] = useState(false)
+ const [dashLink, setDashLink] = useState(false)
   useEffect(() =>{
     InvestmentPlanFunction()
+    if(sessionStorage.getItem('tokenActive') === 'true'){
+      setDashLink(sessionStorage.getItem('dashLink'))
+      setIsDashboardActive(true)
+    }
 
   }, [])
 
@@ -321,7 +326,7 @@ export const Home = () =>{
                       </div>
 
                     </div>
-                    <Link className='site-inverse-btn px-5'>Open Live Account</Link>
+                    <Link to='/register' className='site-inverse-btn px-5'>Open Live Account</Link>
                   </div>
                 </div>
 
@@ -440,7 +445,7 @@ export const Home = () =>{
                         <p className="home-crypto-banner-header font-bold">Crypto's Making A Move</p>
                         <p className="light-text sm-text pb-4">Bitcoin Ripping Higher – How much further can it kick? What can stop this momentum juggernaut? The Crypto market is gaining momentum and is worth watching closely.</p>
                         <div className="pb-4">
-                          <Link className="site-inverse-btn px-5">Open Live Account</Link>
+                          <Link to='/register' className="site-inverse-btn px-5">Open Live Account</Link>
                         </div>
                       </div>
                     </div>
@@ -564,7 +569,8 @@ export const Home = () =>{
                               </div>
 
                               <div className='pt-4 pb-2 my-5'>
-                                <Link className="site-btn width-100 text-center">Start Trading Now</Link>
+
+                                <Link to={`${isDashboardActive ? dashLink : '/register'}`} className="site-btn width-100 text-center">Start Trading Now</Link>
                               </div>
                             </div>
 
@@ -686,7 +692,7 @@ export const Home = () =>{
               </div>
 
               <div className="mt-5 d-flex justify-content-center">
-                <Link className="site-btn px-5">Open Live Account</Link>
+                <Link to='/register' className="site-btn px-5">Open Live Account</Link>
               </div>
             </div>
 

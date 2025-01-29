@@ -1,7 +1,6 @@
 import { jwtDecode } from "jwt-decode";
 import { createContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import ReCAPTCHA from 'react-google-recaptcha';
 
 const AuthContext = createContext()
 export default AuthContext
@@ -37,6 +36,33 @@ export const AuthProvider = ({children}) =>{
 
     const [errorMessages, setErrorMessage] = useState('')
     const [overlay, setOverlay] = useState(false)
+
+
+    const isTokenExpired = (token) => {
+      if (!token) return true;
+      const decoded = jwtDecode(token); // Decode the token using jwt_decode
+      const currentTime = Date.now() / 1000; // Current time in seconds
+      return decoded.exp < currentTime;
+    };
+
+    const handleTokenExpiry = () => {
+      sessionStorage.setItem('tokenActive',false)
+      console.log('Token is either empty or expired. Executing function...');
+      // Perform necessary actions, e.g., refreshing the token or logging out the user
+    };
+
+    useEffect(() => {
+      if (!authTokens || isTokenExpired(authTokens?.access)) {
+        handleTokenExpiry();
+      }else{
+        sessionStorage.setItem('tokenActive',true)
+        if(authTokens.role === "ADMIN"){
+          sessionStorage.setItem('dashLink', '/admin/home')
+        }else{
+          sessionStorage.setItem('dashLink', '/dashboard/home')
+      }
+      }
+    }, [authTokens]);
     
     const formatDate = (dateString) => {
         const date = new Date(dateString);

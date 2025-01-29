@@ -140,6 +140,7 @@ import { ClientChangePassowrd2 } from './pages/clientDashboard/changePassword/st
 import { ClientChangePassowrd3 } from './pages/clientDashboard/changePassword/step3';
 import { ClientUserProfile } from './pages/clientDashboard/userProfile/userProfile';
 import { Home } from './pages/information/home';
+import { Forex } from './pages/information/asset/forex';
 
 
 
@@ -153,7 +154,8 @@ function App() {
             <Routes>
               {/* -----------------------------------INFORMATION ---------------------------------- */}
               <Route path="" element={<Home />} />
-
+              {/* Assest */}
+              <Route path="/forex/" element={<Forex />} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
