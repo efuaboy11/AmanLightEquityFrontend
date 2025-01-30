@@ -14,8 +14,8 @@ import tradeStocks from '../../../img/trade-stocks.png'
 import tradeEnergy from '../../../img/trade-oil-barrel.png'
 import tradeCrypto from  '../../../img/trade-cryptocurrencies.png'
 import commodites from '../../../img/trade-commondities.png'
-
-export const Forex = () =>{
+import icon from '../../../img/trade-shared-index.png'
+export const Metals = () =>{
   const { authTokens, 
     overlay,
     formatCurrency,
@@ -72,7 +72,7 @@ export const Forex = () =>{
       <div>
         <div className="light-background2 mb-3 py-2">
           <div className="container-lg">
-            <p><Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / Assest / forex</p>
+            <p><Link Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / Assest / Precious Metals</p>
           </div>
         </div>
 
@@ -81,49 +81,192 @@ export const Forex = () =>{
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-8 col-md-10">
                 <div className="text-center">
-                  <p className="lg-text font-weight-700">Trade Forex Like A Pro</p>
-                  <p className="light-text-2">Join the thousands of traders that have already started turning a profit with AmaniLightEquity. Gain access to over 40 CFDs on the global currency pairs. Enjoy the advantage of working with fast deposits and withdrawals, as well as tight spreads. Trade on the world's most popular platform MetaTrade5.</p>
+                  <p className="lg-text font-weight-700 pb-3">Trading Precious Metals CFDs</p>
+                  <p className="light-text-2">Trade CFDs on Spot metals and explore new trading opportunities with AmaniLightEquity today!</p>
                   <div className="pt-4">
                     <Link to={`${isDashboardActive ? dashLink : '/register'}`} className="site-btn">Start Trading</Link>
                   </div>
                 </div>
               </div>
             </div>
-
-
           </div>
-
         </section>
 
         <section className="site-section-container">
-          <div className="light-background3 py-4 responsive-centralized-text">
-            <div className="container-lg">
-              <p className="site-header font-weight-700 text-center py-4">WHAT IS FOREX TRADING</p>
-              <div className="row g-4 pb-4">
-                <div className="col-md-6">
+          <div className="container-lg">
+            <div className="row justify-content-center">
+              <div className="col-lg-8 col-md-10">
+               <p className="site-header font-weight-700 text-center pb-5">Popular Spot Metals - Invest in Spot Gold and Silver</p>
+               <div className="box-shadow-2 border-radius-5px">
+                <table className="metals-table">
+                  <thead>
+                    <tr>
+                      <th className="ps-5 py-2">Instrument</th>
+                      <th>Spreads</th>
+                      <th>Commission</th>
+                      <th>Leverage (up to)</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAU/USD</td>
+                      <td className="light-text-2">Floating from 1.5$</td>
+                      <td className="light-text-2">8$/lot</td>
+                      <td className="light-text-2">20</td>
+                    </tr>
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XCU-Copper</td>
+                      <td className="light-text-2">Floating from 3.3$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPB-Lead</td>
+                      <td className="light-text-2">Floating from 2.2$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XNI-Nickel</td>
+                      <td className="light-text-2">Floating from 8.55$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAL-Aluminium</td>
+                      <td className="light-text-2">Floating from 2.3$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPDUSD-Palladium</td>
+                      <td className="light-text-2">Floating from 16.4$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPTUSD-Platinum</td>
+                      <td className="light-text-2">Floating from 5.3$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">5</td>
+                    </tr>
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XZN-Zinc</td>
+                      <td className="light-text-2">Floating from 2.8$</td>
+                      <td className="light-text-2">0.5%/lot</td>
+                      <td className="light-text-2">10</td>
+                    </tr>
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAG/USD</td>
+                      <td className="light-text-2">Floating from 0.02$</td>
+                      <td className="light-text-2">8$/lot</td>
+                      <td className="light-text-2">10</td>
+                    </tr>
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAG/USD</td>
+                      <td className="light-text-2">Floating from 0.02$</td>
+                      <td className="light-text-2">8$/lot</td>
+                      <td className="light-text-2">10</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+               </div>
+              </div>
+            </div>
+           
+          </div>
+        </section>
+
+        <section className="site-section-container">
+          <div className="container-lg">
+            <p className="site-header font-weight-700 text-center uppercase">Why You Should Trade CFDs With AmaniLightEquity</p>
+            <div className="row g-3 pt-5">
+              <div className="col-lg-4 col-md-6">
+                <div className="blue-boxes border-radius-5px p-4">
+                  <img width='80px' src={commodites} alt="" />
                   <div>
-                    <p>Forex trading, also known as foreign exchange trading, involves buying and selling currencies on the global market with the aim of making a profit. It is the largest and most liquid financial market in the world, with a daily trading volume exceeding $6 trillion. Participants in forex trading range from central banks and financial institutions to individual retail traders, all seeking to capitalize on fluctuations in currency values. Trading occurs in currency pairs, such as EUR/USD or GBP/JPY, where the value of one currency is quoted against another. </p>
-
+                    <p className="font-weight-700 py-3">Online Safety</p>
+                    <p className="light-text-2">Your data and funds are under isolation in segregated accounts with negative balance protection.</p>
                   </div>
-                </div>
 
-                <div className="col-md-6">
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="blue-boxes border-radius-5px p-4">
+                  <img width='80px' src={icon} alt="" />
                   <div>
-                    <p>Traders employ various strategies, including technical analysis, fundamental analysis, and algorithmic trading, to identify opportunities in the market. The forex market is known for its high leverage, which can amplify both gains and losses, making risk management an essential aspect of trading. With the right knowledge, tools, and discipline, forex trading offers individuals and businesses the opportunity to diversify their investment portfolios and potentially achieve financial growth in a dynamic and fast-paced market.</p>
+                    <p className="font-weight-700 py-3">24/5 Multilingual Support</p>
+                    <p className="light-text-2">Enjoy having 24/5 support with our customer and technical support team that can assist in 5 languages.</p>
                   </div>
-                </div>
 
-                <div className="col-md-6">
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6">
+                <div className="blue-boxes border-radius-5px p-4">
+                  <img width='80px' src={tradeCrypto} alt="" />
                   <div>
-                    <p>wide range of factors, including economic data, geopolitical events, interest rates, and market sentiment. Forex trading is typically conducted over-the-counter (OTC) through electronic trading platforms, allowing traders to operate 24 hours a day, five days a week, across major trading sessions like those in London, New York, and Tokyo. </p>
+                    <p className="font-weight-700 py-3">Fully Regulated And Licensed</p>
+                    <p className="light-text-2">AmaniLightEquity is heavily regulated and licensed by the UFSA (US Financial Services Authority)</p>
                   </div>
+
                 </div>
-
-
               </div>
             </div>
           </div>
         </section>
+
+        <section className="site-section-container">
+          <div className="light-background4">
+            <div className="container-lg py-5">
+              <p className="font-weight-700 site-header text-center pb-5">TRADE GLOBAL MARKETS WITH AmaniLightEquity</p>
+              <div className="row g-3">
+                <div className="col-md-6">
+                  <div className="box-shadow-2 px-4 py-5">
+                    <div className="d-flex align-center">
+                      <img width='70px' src={tradeMetal} alt="" />
+                      <div className="ps-3">
+                        <p className="font-weight-700 pb-3">Gold</p>
+                        <p className="light-text-2">XAU/USD is based on the price of gold and is traded against the US dollar. Gold is a spot commodity and is one of the most traded precious metals. Its price is quoted per troy ounce (oz t), in US dollars.</p>
+                      </div>
+                    </div>
+
+                    <div className="pt-5">
+                      <Link className="site-inverse-btn width-100 text-center"> Learn More</Link>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-md-6">
+                  <div className="box-shadow-2 px-4 py-5">
+                    <div className="d-flex align-center">
+                      <img width='70px' src={tradeMetal} alt="" />
+                      <div className="ps-3">
+                        <p className="font-weight-700 pb-3">Silver</p>
+                        <p className="light-text-2">XAG/USD is based on the price of silver and is traded against the US dollar. Silver's price is quoted per ounce, in US dollars. View XAG/USD's live charts, quotes, and leverage.</p>
+                      </div>
+                    </div>
+
+                    <div className="pt-5">
+                      <Link className="site-inverse-btn width-100 text-center"> Learn More</Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
 
         <section className="site-section-container">
           <div className="container-lg responsive-centralized-text">
@@ -188,46 +331,47 @@ export const Forex = () =>{
 
         </section>
 
+
         <section className="site-section-container">
           <div className="container-lg">
             <div className="row justify-content-center">
               <div className="text-center col-xl-6 col-lg-8 col-md-10">
-                <p className="site-header pb-4 font-weight-700">FAQ When It Comes To Forex</p>
-                <p className="light-text2">If you still have a load of questions in regards to forex and how to profit from the forex market, do not hesitate to get in contact with our customer support team that will gladly answer any questions you have.</p>
+                <p className="site-header pb-4 font-weight-700">What If I Have Questions About Precious Metal Trading?</p>
+                <p className="light-text2">If you have any questions or second thoughts about trading precious metals, feel free to check out our FAQ to get most of your questions and doubts answered. If at the end of the day you still have questions, feel free to contact our customer support team that will answer any questions you may have.</p>
               </div>
             </div>
 
             <div className="pt-5">
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep1}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5">When Can I Trade Forex</p>
+                  <p className="ps-5">How to Start Trading precious metal commodities?  </p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step1Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">The forex market is open 24 hours a day Monday through Friday and is traded globally amongst all of the big financial players on the market.</p>
+                  <p className="ps-5 pt-4">All you have to do is register and pass the registration process with AmaniLightEquity. Once that is done, you can start trading. If you are in need of some guidance as to how to invest properly, one of our trading professionals will reach out to you to answer any of your questions.</p>
                 </div>
               </div>
 
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep2}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5"> Which Platform Is The Best When It Comes To Forex Trading?  </p>
+                  <p className="ps-5">  Which platform is best for precious metal trading?   </p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step2Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">As of today, MetaTrader 5 are known for being the most popular trading platforms on the market. Besides Meta platforms, AmaniLightEquity are all highly recommended with over 100 unique tools and add-ons for its traders to use.</p>
+                  <p className="ps-5 pt-4">When trading with AmaniLightEquity, you will notice that the platform that is mostly used and highly recommended is Meta trader 5. This is a platform that has been battle tested for over a decade and has helped millions of people make a fortune.</p>
                 </div>
               </div>
 
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep3}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5">  How To Start Trading Forex With AmaniLghtEquity?  </p>
+                  <p className="ps-5">What hours does gold trade?  </p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step3Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">To start trading on AmaniLightEquity all you have to do is go through the registration process on the website and a trading professional will reach out to you to guide you through your first trades. It's literally that simple!</p>
+                  <p className="ps-5 pt-4">old trades happen through business days 23 hours a day.</p>
                 </div>
               </div>
             </div>
@@ -237,8 +381,8 @@ export const Forex = () =>{
 
         </section>
 
-          <section className="site-section-container">
-            <div className="light-background1 py-5">
+        <section className="site-section-container">
+            <div className="light-background4 py-5">
               <div className="container-lg">
                 <div className="text-center font-weight-700 site-header">
                   <p>Tradable Assets <br /> Invest in Currencies, CFD's, Cryptocurrencies, Forex e.t.c</p>

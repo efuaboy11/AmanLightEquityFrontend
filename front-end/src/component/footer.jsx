@@ -227,7 +227,7 @@ export const Footer = () =>{
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Precious Metals</Link>
+                  <Link to='/metals/' className="footer-links">Precious Metals</Link>
                 </div>
 
                 <div className='my-2'>

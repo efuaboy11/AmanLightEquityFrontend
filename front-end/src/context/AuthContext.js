@@ -30,7 +30,7 @@ export const AuthProvider = ({children}) =>{
     const navigate = useNavigate()
     const [user, setUser] = useState(() => sessionStorage.getItem("authTokens") ? jwtDecode(sessionStorage.getItem("authTokens")) : null)
 
-    const [showSidebar, setShowSidebar] = useState(null)
+    const [showSidebar, setShowSidebar] = useState(false)
 
     const [copied, setCopied] = useState(false)
 

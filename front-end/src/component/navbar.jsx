@@ -12,6 +12,7 @@ export const Navbar = () =>{
 
   const { authTokens, 
     showSidebar, 
+    setShowSidebar,
     toggleClientSidebar,
 
   } = useContext(AuthContext)
@@ -203,7 +204,7 @@ export const Navbar = () =>{
       setShowDashboardBtn(true)
     }
     setDasLink(sessionStorage.getItem('dashLink'))
-    
+    setShowSidebar(false)
 
   }, [])
   return(
@@ -320,7 +321,7 @@ export const Navbar = () =>{
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/metals/' className='nav-sublink'>
                         <p>Precious Metal</p>                
                       </Link>
                     </li>
@@ -632,8 +633,8 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/metals/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/metals/">
                           <div className="d-flex ms-3 py-2">
                             <p>Precious Metals</p> 
                           </div>

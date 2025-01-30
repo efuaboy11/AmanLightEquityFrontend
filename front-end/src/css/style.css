@@ -83,6 +83,10 @@ ul,  li{
   background-color: #f3f6fa;
 }
 
+.light-background4{
+  background-color: #F5F5F5;
+}
+
 .grey-background{
   background:#404040;
 }
@@ -90,6 +94,7 @@ ul,  li{
   background-color: #000;
   color: #FFF4F4;
 }
+
 
 .blue-background{
   background-color: #4A628A;
@@ -267,6 +272,16 @@ ul,  li{
 .box-shadow-2{
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+.blue-boxes{
+  background-color: #F5F5F5;
+  transition: all ease 0.5s;
+}
+
+.blue-boxes:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
 
 .display-block{
   display: block;

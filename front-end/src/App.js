@@ -141,6 +141,7 @@ import { ClientChangePassowrd3 } from './pages/clientDashboard/changePassword/st
 import { ClientUserProfile } from './pages/clientDashboard/userProfile/userProfile';
 import { Home } from './pages/information/home';
 import { Forex } from './pages/information/asset/forex';
+import { Metals } from './pages/information/asset/metals';
 
 
 
@@ -153,9 +154,10 @@ function App() {
             <ScrollToTop />
             <Routes>
               {/* -----------------------------------INFORMATION ---------------------------------- */}
-              <Route path="" element={<Home />} />
+              <Route path="/" element={<Home />} />
               {/* Assest */}
               <Route path="/forex/" element={<Forex />} />
+              <Route path="/metals/" element={<Metals />} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
