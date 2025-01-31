@@ -98,76 +98,76 @@ export const Indexes = () =>{
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
                <p className="site-header font-weight-700 text-center pb-5">Our top index CFDs</p>
-               <div className="box-shadow-2 border-radius-5px">
-                <table className="metals-table">
-                  <thead>
-                    <tr>
-                      <th className="ps-5 py-2">Instrument</th>
-                      <th>Spreads</th>
-                      <th>Commission</th>
-                      <th>Leverage (up to)</th>
-                    </tr>
-                  </thead>
+               <div className="dash-scroll-bar box-shadow-2 border-radius-5px">
+                  <table className="site-table metals-table">
+                    <thead>
+                      <tr>
+                        <th className="ps-5 py-2">Instrument</th>
+                        <th>Spreads</th>
+                        <th>Commission</th>
+                        <th>Leverage (up to)</th>
+                      </tr>
+                    </thead>
 
-                  <tbody>
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">AUS200</td>
-                      <td className="light-text-2">Floating from 2.5 AUD</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">AUS200</td>
+                        <td className="light-text-2">Floating from 2.5 AUD</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">FRA40</td>
-                      <td className="light-text-2">Floating from 1.4 EUR</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">FRA40</td>
+                        <td className="light-text-2">Floating from 1.4 EUR</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">JPN225</td>
-                      <td className="light-text-2">Floating from 7 JPY</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">JPN225</td>
+                        <td className="light-text-2">Floating from 7 JPY</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">UK100</td>
-                      <td className="light-text-2">Floating from 0.7 GBP</td>
-                      <td className="light-text-2">0.05%/</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">UK100</td>
+                        <td className="light-text-2">Floating from 0.7 GBP</td>
+                        <td className="light-text-2">0.05%/</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">GER30m</td>
-                      <td className="light-text-2">Floating from 3 EUR</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">GER30m</td>
+                        <td className="light-text-2">Floating from 3 EUR</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">USA500m</td>
-                      <td className="light-text-2">Floating from 1.2$</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">WS30m</td>
-                      <td className="light-text-2">Floating from 5$</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">USA500m</td>
+                        <td className="light-text-2">Floating from 1.2$</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">WS30m</td>
+                        <td className="light-text-2">Floating from 5$</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">US100m</td>
-                      <td className="light-text-2">Floating from 1.6$</td>
-                      <td className="light-text-2">0.05%</td>
-                      <td className="light-text-2">20</td>
-                    </tr>
+                      <tr>
+                        <td className="site-primary-text ps-5 font-weight-700 py-2">US100m</td>
+                        <td className="light-text-2">Floating from 1.6$</td>
+                        <td className="light-text-2">0.05%</td>
+                        <td className="light-text-2">20</td>
+                      </tr>
 
-                  </tbody>
-                </table>
+                    </tbody>
+                  </table>
                </div>
               </div>
             </div>

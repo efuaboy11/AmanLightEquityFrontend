@@ -232,10 +232,13 @@ ul,  li{
 .border-bottom2{
   border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
 }
-
+.border-right-dotted{
+  border-right: 1px dotted #404040;
+}
 .border1{
   border: 1px solid #404040;
 }
+
 
 .border-right1{
   border-right: 1px solid #404040;

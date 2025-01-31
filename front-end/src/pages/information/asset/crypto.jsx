@@ -99,7 +99,7 @@ export const Crypto = () =>{
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
                <p className="site-header font-weight-700 text-center pb-5">Our top cryptocurrency CFDs</p>
-               <div className="box-shadow-2 border-radius-5px">
+               <div className="dash-scroll-bar box-shadow-2 border-radius-5px">
                 <table className="metals-table">
                   <thead>
                     <tr>

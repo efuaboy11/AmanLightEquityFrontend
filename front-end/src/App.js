@@ -145,6 +145,9 @@ import { Metals } from './pages/information/asset/metals';
 import { Indexes } from './pages/information/asset/indexes';
 import { Energy } from './pages/information/asset/energyCarriers';
 import { Crypto } from './pages/information/asset/crypto';
+import { DepositMethod } from './pages/information/account/depositMethod';
+import { ClientVerifiaction } from './pages/information/account/verification';
+import { GeneralFees } from './pages/information/account/generalFees';
 
 
 
@@ -164,6 +167,11 @@ function App() {
               <Route path="/indexes/" element={<Indexes />} />
               <Route path="/energy/" element={<Energy />} />
               <Route path="/crypto/" element={<Crypto />} />
+
+              {/* Account */}
+              <Route path="/deposit-method/" element={<DepositMethod />} />
+              <Route path="/verification-documents/" element={<ClientVerifiaction/>} />
+              <Route path="/general-fees/" element={<GeneralFees/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

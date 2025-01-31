@@ -369,7 +369,7 @@ export const Navbar = () =>{
                       <div>
                         <p className="light-text">Fundings</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/deposit-method/' className='nav-sublink'>
                             <p>Deposit Method</p>                
                           </Link>
                         </li>
@@ -708,8 +708,8 @@ export const Navbar = () =>{
                       </li>
 
                       <p className="light-text ps-3 pt-3">Fundings</p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/deposit-method/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/deposit-method/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Deposit Method</p> 
                           </div>
