@@ -231,15 +231,15 @@ export const Footer = () =>{
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Shared Indexes</Link>
+                  <Link to='/indexes/' className="footer-links">Shared Indexes</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Energy Carriers</Link>
+                  <Link to='/energy/' className="footer-links">Energy Carriers</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Cryptocurrencies</Link>
+                  <Link to='/crypto/' className="footer-links">Cryptocurrencies</Link>
                 </div>
               </div>
             </div>
@@ -248,11 +248,11 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Trading Platforms</p>
                 <div className='my-2'>
-                  <Link className="footer-links">Sign In</Link>
+                  <Link to='/login' className="footer-links">Sign In</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Create Account</Link>
+                  <Link to='/register' className="footer-links">Create Account</Link>
                 </div>
 
                 <div className='my-2'>

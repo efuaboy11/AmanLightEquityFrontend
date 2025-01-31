@@ -86,6 +86,13 @@ ul,  li{
 .light-background4{
   background-color: #F5F5F5;
 }
+.white-background{
+  background-color: #fff;
+}
+
+.white-text{
+  color: #fff;
+}
 
 .grey-background{
   background:#404040;
@@ -140,6 +147,7 @@ ul,  li{
 .light-link:hover{
   color: #fff;
 }
+
 
 .green-background{
   color: #DFD7BF;
@@ -219,6 +227,10 @@ ul,  li{
 
 .border-bottom1{
   border-bottom: 1px solid #404040;
+}
+
+.border-bottom2{
+  border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.1);
 }
 
 .border1{

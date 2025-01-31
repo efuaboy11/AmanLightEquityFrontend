@@ -142,6 +142,9 @@ import { ClientUserProfile } from './pages/clientDashboard/userProfile/userProfi
 import { Home } from './pages/information/home';
 import { Forex } from './pages/information/asset/forex';
 import { Metals } from './pages/information/asset/metals';
+import { Indexes } from './pages/information/asset/indexes';
+import { Energy } from './pages/information/asset/energyCarriers';
+import { Crypto } from './pages/information/asset/crypto';
 
 
 
@@ -158,6 +161,9 @@ function App() {
               {/* Assest */}
               <Route path="/forex/" element={<Forex />} />
               <Route path="/metals/" element={<Metals />} />
+              <Route path="/indexes/" element={<Indexes />} />
+              <Route path="/energy/" element={<Energy />} />
+              <Route path="/crypto/" element={<Crypto />} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

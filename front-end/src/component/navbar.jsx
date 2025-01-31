@@ -327,19 +327,19 @@ export const Navbar = () =>{
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/indexes/' className='nav-sublink'>
                         <p>Shared Indexes</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
-                        <p>Energies Carriers</p>                
+                      <Link to='/energy/' className='nav-sublink'>
+                        <p >Energies Carriers</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/crypto/' className='nav-sublink'>
                         <p>Crypto Currency</p>                
                       </Link>
                     </li>
@@ -353,7 +353,7 @@ export const Navbar = () =>{
                       <div className='me-5 pe-5'>
                         <p className="light-text">Accounts</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/register' className='nav-sublink'>
                             <p>Open Live Account</p>                
                           </Link>
                         </li>
@@ -642,24 +642,24 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/indexes/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/indexes/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Shared Indexes</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/energy/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/energy/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Energy Carriers</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/crypto/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/crypto/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Cryptocurrencies</p> 
                           </div>
@@ -690,8 +690,8 @@ export const Navbar = () =>{
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarAccountDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
                       <p className="light-text ps-3 pt-3">Account</p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/plan/") ?"client-sidebar-active-link": ""}`}>     
-                        <Link className='client-sidebar-link' to="/dashboard/investment/plan/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/register") ?"client-sidebar-active-link": ""}`}>     
+                        <Link className='client-sidebar-link' to="/register">
                           <div className="d-flex ms-3 py-2">
                             <p>Open Live Account</p> 
                           </div>

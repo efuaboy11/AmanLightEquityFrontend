@@ -15,7 +15,8 @@ import tradeEnergy from '../../../img/trade-oil-barrel.png'
 import tradeCrypto from  '../../../img/trade-cryptocurrencies.png'
 import commodites from '../../../img/trade-commondities.png'
 import icon from '../../../img/trade-shared-index.png'
-export const Metals = () =>{
+import laptopChart from '../../../img/laptop-chart.jpg'
+export const Indexes = () =>{
   const { authTokens, 
     overlay,
     formatCurrency,
@@ -72,7 +73,7 @@ export const Metals = () =>{
       <div>
         <div className="light-background2 mb-3 py-2">
           <div className="container-lg">
-            <p><Link Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / Assest / Precious Metals</p>
+            <p><Link Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / Assest / Shared Indexes</p>
           </div>
         </div>
 
@@ -81,8 +82,8 @@ export const Metals = () =>{
             <div className="row justify-content-center">
               <div className="col-xl-6 col-lg-8 col-md-10">
                 <div className="text-center">
-                  <p className="lg-text font-weight-700 pb-3">Trading Precious Metals CFDs</p>
-                  <p className="light-text-2">Trade CFDs on Spot metals and explore new trading opportunities with AmaniLightEquity today!</p>
+                  <p className="lg-text font-weight-700 pb-3">Trading Index CFDs Just Got Much Easier</p>
+                  <p className="light-text-2">Trade CFDs Across Europe, The Americas, and Asia. Nothing But The Most Popular Indices On Star Extreme. Start Trading</p>
                   <div className="pt-4">
                     <Link to={`${isDashboardActive ? dashLink : '/register'}`} className="site-btn">Start Trading</Link>
                   </div>
@@ -96,7 +97,7 @@ export const Metals = () =>{
           <div className="container-lg">
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
-               <p className="site-header font-weight-700 text-center pb-5">Popular Spot Metals - Invest in Spot Gold and Silver</p>
+               <p className="site-header font-weight-700 text-center pb-5">Our top index CFDs</p>
                <div className="box-shadow-2 border-radius-5px">
                 <table className="metals-table">
                   <thead>
@@ -110,69 +111,59 @@ export const Metals = () =>{
 
                   <tbody>
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAU/USD</td>
-                      <td className="light-text-2">Floating from 1.5$</td>
-                      <td className="light-text-2">8$/lot</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">AUS200</td>
+                      <td className="light-text-2">Floating from 2.5 AUD</td>
+                      <td className="light-text-2">0.05%</td>
                       <td className="light-text-2">20</td>
                     </tr>
 
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XCU-Copper</td>
-                      <td className="light-text-2">Floating from 3.3$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">FRA40</td>
+                      <td className="light-text-2">Floating from 1.4 EUR</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
                     </tr>
 
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPB-Lead</td>
-                      <td className="light-text-2">Floating from 2.2$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">JPN225</td>
+                      <td className="light-text-2">Floating from 7 JPY</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
                     </tr>
 
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XNI-Nickel</td>
-                      <td className="light-text-2">Floating from 8.55$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">UK100</td>
+                      <td className="light-text-2">Floating from 0.7 GBP</td>
+                      <td className="light-text-2">0.05%/</td>
+                      <td className="light-text-2">20</td>
                     </tr>
 
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAL-Aluminium</td>
-                      <td className="light-text-2">Floating from 2.3$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">GER30m</td>
+                      <td className="light-text-2">Floating from 3 EUR</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
+                    </tr>
+
+
+                    <tr>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">USA500m</td>
+                      <td className="light-text-2">Floating from 1.2$</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
                     </tr>
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPDUSD-Palladium</td>
-                      <td className="light-text-2">Floating from 16.4$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
-                    </tr>
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XPTUSD-Platinum</td>
-                      <td className="light-text-2">Floating from 5.3$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">5</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">WS30m</td>
+                      <td className="light-text-2">Floating from 5$</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
                     </tr>
 
                     <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XZN-Zinc</td>
-                      <td className="light-text-2">Floating from 2.8$</td>
-                      <td className="light-text-2">0.5%/lot</td>
-                      <td className="light-text-2">10</td>
-                    </tr>
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAG/USD</td>
-                      <td className="light-text-2">Floating from 0.02$</td>
-                      <td className="light-text-2">8$/lot</td>
-                      <td className="light-text-2">10</td>
-                    </tr>
-                    <tr>
-                      <td className="site-primary-text ps-5 font-weight-700 py-2">XAG/USD</td>
-                      <td className="light-text-2">Floating from 0.02$</td>
-                      <td className="light-text-2">8$/lot</td>
-                      <td className="light-text-2">10</td>
+                      <td className="site-primary-text ps-5 font-weight-700 py-2">US100m</td>
+                      <td className="light-text-2">Floating from 1.6$</td>
+                      <td className="light-text-2">0.05%</td>
+                      <td className="light-text-2">20</td>
                     </tr>
 
                   </tbody>
@@ -185,41 +176,85 @@ export const Metals = () =>{
         </section>
 
         <section className="site-section-container">
-          <div className="container-lg ">
-            <p className="site-header font-weight-700 text-center uppercase">Why You Should Trade CFDs With AmaniLightEquity</p>
-            <div className="responsive-centralized-text">
-              <div className="row g-3 pt-5">
-                <div className="col-lg-4 col-md-6">
-                  <div className="blue-boxes border-radius-5px p-4">
-                    <img width='80px' src={commodites} alt="" />
-                    <div>
-                      <p className="font-weight-700 py-3">Online Safety</p>
-                      <p className="light-text-2">Your data and funds are under isolation in segregated accounts with negative balance protection.</p>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div className="col-lg-4 col-md-6">
-                  <div className="blue-boxes border-radius-5px p-4">
+          <div className="container-lg">
+            <div className="light-background4 border-radius-10px p-4">
+              <div className="row gy-4">
+                <div className="col-lg-8 col-md-6 ">
+                  <div>
                     <img width='80px' src={icon} alt="" />
-                    <div>
-                      <p className="font-weight-700 py-3">24/5 Multilingual Support</p>
-                      <p className="light-text-2">Enjoy having 24/5 support with our customer and technical support team that can assist in 5 languages.</p>
+                    <p className="sm-text font-weight-700 py-4">Indices are the most popular form of CFDs. IC Markets Global has a large range of Indices from around the world to choose from, including the Australian S&P 200 Index, UK FTSE 100 Index, US E-mini S&P 500 and US DJIA Index.</p>
+                    <p className="light-text-2">A stock index is a good indicative measure of market performance. Indices such as the FTSE 100 and DJIA Index are baskets of blue chip stocks listed on the exchange and are generally a good measure of the current market sentiment. A change in the performance of any constituent stock in an index is reflected in a change in the overall value of that index. Indices have the advantage of allowing traders to take a wider view of a basket of stocks rather than taking a view on one individual stock alone. Online CFD and futures based indices are offered on all platforms.</p>
+                  </div>
+                </div>
+
+                <div className="col-lg-4 col-md-6">
+                  <div className="p-3 white-background border-radius-10px">
+                    <p className="light-text-2">Indicies</p>
+                    <p className="md-text font-weight-700">Facts</p>
+
+                    <div className="pt-3">
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">25 Indices to trade from</p>
+                      </div>
+
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">Leverage up to 1:200</p>
+                      </div>
+
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">Spreads as low as 0.4 pips</p>
+                      </div>
+
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">Deep Liquidity</p>
+                      </div>
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">No commissions</p>
+                      </div>
+
+                      <div className="d-flex border-bottom2 py-2">
+                        <i class="bi bi-check site-primary-bg border-radius-50 px-1 white-text"></i>
+                        <p className="ps-3 font-weight-700">All platforms</p>
+                      </div>
+                      
+
+                      
+                    </div>
+
+
+                    <div className=" pt-5">
+                      <Link to='/register' className="width-100 text-center site-inverse-btn">Open Live Account</Link>
                     </div>
 
                   </div>
                 </div>
 
-                <div className="col-lg-4 col-md-6">
-                  <div className="blue-boxes border-radius-5px p-4">
-                    <img width='80px' src={tradeCrypto} alt="" />
-                    <div>
-                      <p className="font-weight-700 py-3">Fully Regulated And Licensed</p>
-                      <p className="light-text-2">AmaniLightEquity is heavily regulated and licensed by the UFSA (US Financial Services Authority)</p>
-                    </div>
 
-                  </div>
+              </div>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section className="site-section-container">
+          <div className="container-lg">
+            <div className="row g-4">
+              <div className="col-md-6">
+                <div>
+                  <img width='100%' height='500px' src={laptopChart} alt="" />
+                </div>
+              </div>
+
+              <div className="col-md-6 responsive-centralized-text">
+                <div>
+                  <p className="site-header font-weight-700 pb-4">How to determine if a client is entitled dividend from Index AUS200?</p>
+                  <p className="light-text-2">Let us assume that the ex-dividend date for Index AUS200 is on the of 18th August 2016. Therefore, a client must have an open position for Index AUS200 before the 18th of August 2016 and it must remain open until the 18th August 2016, in order to have the dividend adjustment of $2.44 per lot. To determine if the dividend adjustment is added or deducted to the client’s account, will depend on whether it is a SELL or BUY on AUS200. If the client has 1 lot of BUY for AUS200, the client will be entitled $2.44 per lot. However, if it is a SELL of AUS200, the client will be deducted $2.44 per lot. The amount $2.44 per lot will be converted to the client’s base currency, before it is being deducted. Since this is from index AUS200, the dividend adjustment will be AUD$2.44 per lot. Alternatively, if the index is US500, the dividend adjustment would be USD$2.44 per lot. IC Markets Global EX- Dividends Excel sheet shows the expected Indices that will have their index points adjusted for the given week and the actual ex-dividend adjustment amount for each indices will be updated regularly on our blog, Ex- Dividends Adjustments.</p>
                 </div>
               </div>
             </div>
@@ -227,17 +262,89 @@ export const Metals = () =>{
         </section>
 
         <section className="site-section-container">
+            <div className="light-background4 py-5">
+              <div className="container-lg">
+                <div className="d-sm-flex justify-content-between pb-5">
+                  <p className="site-header font-weight-700 mb-3">Indices example</p>
+                  <div>
+                   <p className="d-inline-block  site-primary-bg sm-text py-1 px-3 border-radius-5px">Buying: Australia 200 Indes</p>
+                  </div>
+                  
+                </div>
+
+                <div className="row g-3">
+                  <div className="col-lg-4 col-md-6">
+                    <div className="white-background p-4 border-radius-10px">
+                      <p className="font-weight-700 sm-text">The gross profit on your trade is calculated as follows:</p>
+
+
+                      <div className="pt-2">
+                        <div className="border-bottom2 py-2">
+                          <h6>Opening Price</h6>
+                          <p>4951</p>
+                        </div>
+
+
+                        <div className="border-bottom2 py-2">
+                          <h6>Closing Price</h6>
+                          <p>4970</p>
+                        </div>
+
+                        <div className="border-bottom2 py-2">
+                          <h6>Difference</h6>
+                          <p>19</p>
+                        </div>
+
+                        <div className="border-bottom2 py-2">
+                          <h6>Gross Profit on Trade</h6>
+                          <p>19.00 points x 2 contracts ($2 per point) = AUD $38.00</p>
+                        </div>
+
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div className="col-lg-4 col-md-6">
+                    <div className="white-background p-5 border-radius-10px responsive-centralized-text">
+                      <div>
+                        <p className="font-weight-700 sm-text">Opening the Position</p>
+                        <p>The price of the Australia 200 Index is 4950.00/4951.00. You are of the view that blue-chip stocks are undervalued so you decide to buy 2 contracts at 4951.00. (One contract is equal to $1 per index point). No commission is charged on Indices.</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+
+                  <div className="col-lg-4 col-md-6">
+                    <div className="white-background p-5 border-radius-10px responsive-centralized-text">
+                      <div>
+                        <p className="font-weight-700 sm-text">Closing the Position</p>
+                        <p>Four days later, the Australia 200 Index has risen to 4970.00/4971.00 and you decide to take your profit. You close your position by selling 2 contracts at 4970.00</p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+        <section className="site-section-container">
           <div className="light-background4">
             <div className="container-lg py-5">
-              <p className="font-weight-700 site-header text-center pb-5">TRADE GLOBAL MARKETS WITH AmaniLightEquity</p>
+              <p className="font-weight-700 site-header text-center pb-5 uppercase">Our featured products</p>
               <div className="row g-3">
                 <div className="col-md-6">
                   <div className="box-shadow-2 px-4 py-5">
                     <div className="d-flex align-center">
-                      <img width='70px' src={tradeMetal} alt="" />
+                      <img width='70px' src={icon} alt="" />
                       <div className="ps-3">
-                        <p className="font-weight-700 pb-3">Gold</p>
-                        <p className="light-text-2">XAU/USD is based on the price of gold and is traded against the US dollar. Gold is a spot commodity and is one of the most traded precious metals. Its price is quoted per troy ounce (oz t), in US dollars.</p>
+                        <p className="font-weight-700 pb-3">UK100</p>
+                        <p className="light-text-2">The UK100 is a market-capitalization weighted and float-adjusted stock market index of 100 United Kingdom top-performing companies listed on the London Stock Exchange.</p>
                       </div>
                     </div>
 
@@ -250,10 +357,10 @@ export const Metals = () =>{
                 <div className="col-md-6">
                   <div className="box-shadow-2 px-4 py-5">
                     <div className="d-flex align-center">
-                      <img width='70px' src={tradeMetal} alt="" />
+                      <img width='70px' src={icon} alt="" />
                       <div className="ps-3">
-                        <p className="font-weight-700 pb-3">Silver</p>
-                        <p className="light-text-2">XAG/USD is based on the price of silver and is traded against the US dollar. Silver's price is quoted per ounce, in US dollars. View XAG/USD's live charts, quotes, and leverage.</p>
+                        <p className="font-weight-700 pb-3">JPN225</p>
+                        <p className="light-text-2">The JPN225 (NIKKEI 225 INDEX) index is a market-capitalization-weighted and float-adjusted stock market index of 225 Japanese companies listed on the Tokyo Stock Exchange.</p>
                       </div>
                     </div>
 
@@ -338,42 +445,42 @@ export const Metals = () =>{
           <div className="container-lg">
             <div className="row justify-content-center">
               <div className="text-center col-xl-6 col-lg-8 col-md-10">
-                <p className="site-header pb-4 font-weight-700">What If I Have Questions About Precious Metal Trading?</p>
-                <p className="light-text2">If you have any questions or second thoughts about trading precious metals, feel free to check out our FAQ to get most of your questions and doubts answered. If at the end of the day you still have questions, feel free to contact our customer support team that will answer any questions you may have.</p>
+                <p className="site-header pb-4 font-weight-700">Still Have Questions About Index CFD Trading?</p>
+                <p className="light-text2">If you have questions in regards to Index CFD trading then we have all the answers! Feel free to check out our FAQ or contact our customer support team that will gladly answer any questions you have.</p>
               </div>
             </div>
 
             <div className="pt-5">
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep1}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5">How to Start Trading precious metal commodities?  </p>
+                  <p className="ps-5"> How to trade index CFDs?</p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step1Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">All you have to do is register and pass the registration process with AmaniLightEquity. Once that is done, you can start trading. If you are in need of some guidance as to how to invest properly, one of our trading professionals will reach out to you to answer any of your questions.</p>
+                  <p className="ps-5 pt-4">All you have to do is register and pass the registration process with NSBroker. Once that is done, you can start trading. If you are in need of some guidance as to how to invest properly, one of our trading professionals will reach out to you to answer any of your questions.</p>
                 </div>
               </div>
 
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep2}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5">  Which platform is best for precious metal trading?   </p>
+                  <p className="ps-5">  What time does index CFDs index start trading?</p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step2Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">When trading with AmaniLightEquity, you will notice that the platform that is mostly used and highly recommended is Meta trader 5. This is a platform that has been battle tested for over a decade and has helped millions of people make a fortune.</p>
+                  <p className="ps-5 pt-4">When trading with NSBroker, you will notice that the platform that is mostly used and highly recommended is MetaTrader 5. This is a platform that has been battle tested for over a decade and has helped millions of people make a fortune.</p>
                 </div>
               </div>
 
               <div className="box-shadow-2 mb-3  py-3 " onClick={toggleStep3}>
                 <div className="d-flex justify-content-between font-weight-700  cursor-pointer">
-                  <p className="ps-5">What hours does gold trade?  </p>
+                  <p className="ps-5"> Which platform is best for index CFDs trading?  </p>
                   <p className="pe-3"><FontAwesomeIcon icon={faAngleDown}/></p>
                 </div>
                 
                 <div className={` dropdown-content  ${step3Dropdown ? "slide-in" : "slide-out"}`}>
-                  <p className="ps-5 pt-4">old trades happen through business days 23 hours a day.</p>
+                  <p className="ps-5 pt-4">You can trade Index CFDs throughout normal business days.</p>
                 </div>
               </div>
             </div>
@@ -458,7 +565,7 @@ export const Metals = () =>{
                 </div>
               </div>
             </div>
-          </section>
+        </section>
 
         <Footer />
       </div>
