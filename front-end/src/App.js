@@ -154,6 +154,9 @@ import { StockIndicies } from './pages/information/markets/stockIndicies';
 import { Commodities } from './pages/information/markets/commodities';
 import { Marijuana } from './pages/information/markets/marijuana';
 import { Packages } from './pages/information/packages/packages';
+import { Meta5Desktop } from './pages/information/tradingPlatform/meta5Desktop';
+import { Meta5Mobile } from './pages/information/tradingPlatform/meta5Mobile';
+import { Meta5Web } from './pages/information/tradingPlatform/meta5Web';
 
 
 
@@ -187,6 +190,10 @@ function App() {
 
               {/* Our Packages */}
               <Route path="/our-packages/" element={<Packages/>} />
+              {/* Trading Platform */}
+              <Route path="/meta5-desktop-platform/" element={<Meta5Desktop/>} />
+              <Route path="/meta5-mobile-platform/" element={<Meta5Mobile/>} />
+              <Route path="/meta5-web-platform/" element={<Meta5Web/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

@@ -88,7 +88,7 @@ export const GeneralFees = () =>{
         <section className="site-section-container">
           <div className="container-lg">
             <p className="lg-text font-weight-700">Withdrawal Information and General Fees</p>
-            <p className="py-3 light-text-2">Deposit funds to your CypherBlockSage Trading account using one of our convenient options below. All deposit activity is secure and trackable. Please contact your Client Services Representative for further assistance or clarification.</p>
+            <p className="py-3 light-text-2">Deposit funds to your AmaniLightEquity Trading account using one of our convenient options below. All deposit activity is secure and trackable. Please contact your Client Services Representative for further assistance or clarification.</p>
 
             <div className="light-background4">
               <div>

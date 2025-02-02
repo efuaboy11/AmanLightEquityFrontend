@@ -498,7 +498,7 @@ export const Indexes = () =>{
                 </div>
 
                 <div className="home-trade-boxes-container mt-5">
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/metals/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={tradeMetal} alt="" width='50px'/>
@@ -508,7 +508,7 @@ export const Indexes = () =>{
                   </Link>
 
              
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/forex/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={tradeForex} alt="" width='50px'/>
@@ -518,7 +518,7 @@ export const Indexes = () =>{
                   </Link>
 
 
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/indexes/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={trdaeSharedIndex} alt="" width='50px'/>
@@ -527,7 +527,7 @@ export const Indexes = () =>{
                     </div>
                   </Link>
 
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/stock-indices/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={tradeStocks} alt="" width='50px'/>
@@ -536,7 +536,7 @@ export const Indexes = () =>{
                     </div>
                   </Link>
 
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/energy/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={tradeEnergy} alt="" width='50px'/>
@@ -545,7 +545,7 @@ export const Indexes = () =>{
                     </div>
                   </Link>
 
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/crypto/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={tradeCrypto} alt="" width='50px'/>
@@ -554,7 +554,7 @@ export const Indexes = () =>{
                     </div>
                   </Link>
 
-                  <Link className="Link home-trade-boxes">
+                  <Link to='/commodities/' className="Link home-trade-boxes">
                     <div className="">
                       <div className="d-flex justify-content-center">
                         <img src={commodites} alt="" width='50px'/>

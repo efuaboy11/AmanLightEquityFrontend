@@ -422,19 +422,19 @@ export const Navbar = () =>{
                 {tradingDropdown &&
                   <ul className={`nav-sublink-container `}>
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/meta5-desktop-platform/' className='nav-sublink'>
                         <p>MT5 Desktop</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/meta5-mobile-platform/' className='nav-sublink'>
                         <p>MT5 Mobile</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/meta5-web-platform/' className='nav-sublink'>
                         <p>MT5 Web Trader</p>                
                       </Link>
                     </li>
@@ -462,7 +462,7 @@ export const Navbar = () =>{
                     </li>
 
                     <li className='mb-3'>
-                      <Link to='https://www.gemini.com/' className='nav-sublink'>
+                      <Link to='https://www.gemini.com/' target="_blank" className='nav-sublink'>
                         <p>Gemini</p>                
                       </Link>
                     </li>
@@ -817,8 +817,8 @@ export const Navbar = () =>{
 
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarTradeDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/plan/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/plan/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/meta5-desktop-platform/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/meta5-desktop-platform/">
                           <div className="d-flex ms-3 py-2">
                             <p>MT5 Desktop</p> 
                           </div>
@@ -826,8 +826,8 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/meta5-mobile-platform/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/meta5-mobile-platform/">
                           <div className="d-flex ms-3 py-2">
                             <p>MT5 Mobile</p> 
                           </div>
@@ -835,8 +835,8 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/meta5-web-platform/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/meta5-web-platform/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>MT5 Web Trader</p> 
                           </div>
@@ -876,7 +876,7 @@ export const Navbar = () =>{
 
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                        <Link  to='https://www.coinbase.com/' target="_blank" className='client-sidebar-link'>
                           <div className="d-flex ms-3 py-2">
                             <p>Coinbase</p> 
                           </div>
@@ -885,7 +885,7 @@ export const Navbar = () =>{
 
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                        <Link  to='https://www.investvoyager.com/'  target="_blank" className='client-sidebar-link' >
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Voyager</p> 
                           </div>
@@ -894,7 +894,7 @@ export const Navbar = () =>{
 
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                        <Link to='https://www.coinmama.com/' target="_blank" className='client-sidebar-link'>
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Coinmama</p> 
                           </div>
@@ -903,7 +903,7 @@ export const Navbar = () =>{
 
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                        <Link to='https://www.gemini.com/' target="_blank" className='client-sidebar-link'>
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Gemini</p> 
                           </div>
@@ -913,7 +913,7 @@ export const Navbar = () =>{
 
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                        <Link to='https://www.etoro.com/' target="_blank" className='client-sidebar-link'>
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>eToro</p> 
                           </div>
@@ -921,7 +921,7 @@ export const Navbar = () =>{
                       </li>
 
                       <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                        <Link to='https://kraken.com/' target="_blank" className='client-sidebar-link'>
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>BlockFi</p> 
                           </div>

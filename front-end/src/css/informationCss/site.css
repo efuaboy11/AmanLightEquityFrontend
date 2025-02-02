@@ -184,3 +184,11 @@
     color: #F6F5F5;
 }
 
+.site-good-mark{
+    display: flex;
+    align-items: center;
+    min-width: 20px;
+    max-height: 20px;
+    justify-content: center;
+    
+  }
