@@ -260,7 +260,7 @@ export const Footer = () =>{
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">General Fees</Link>
+                  <Link to='/general-fees/' className="footer-links">General Fees</Link>
                 </div>
               </div>
             </div>

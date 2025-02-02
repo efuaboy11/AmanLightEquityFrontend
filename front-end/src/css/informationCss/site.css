@@ -184,15 +184,3 @@
     color: #F6F5F5;
 }
 
-@media screen and (max-width: 500px){
-
-    .site-table tbody tr td{
-        font-size: 10px;
-    }
-    
-    .site-table thead tr th{
-        font-size: 10px;
-    }
-  
-  
-}

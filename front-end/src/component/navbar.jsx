@@ -247,7 +247,7 @@ export const Navbar = () =>{
 
                       <li className='px-3'>
                         <div>
-                          <p className={` navbar-links cursor-pointer`}>Our Packages</p>
+                          <Link to='/our-packages/' className={` navbar-links cursor-pointer`}>Our Packages</Link>
                         </div>
                       </li>
 
@@ -359,7 +359,7 @@ export const Navbar = () =>{
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/verification-documents/' className='nav-sublink'>
                             <p>Account Verification</p>                
                           </Link>
                         </li>
@@ -375,7 +375,7 @@ export const Navbar = () =>{
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/general-fees/' className='nav-sublink'>
                             <p>General Fees</p>                
                           </Link>
                         </li>
@@ -388,31 +388,31 @@ export const Navbar = () =>{
                 {marketDropdown &&
                   <ul className={`nav-sublink-container `}>
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/bitcoin/' className='nav-sublink'>
                         <p>Bitcoin</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/crude-oil/' className='nav-sublink'>
                         <p>Crude Oil</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
-                        <p>Shocked Indexes</p>                
+                      <Link to='/stock-indices/' className='nav-sublink'>
+                        <p>Shocked Indices</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/commodities/' className='nav-sublink'>
                         <p>Commodities</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='/marijuana/' className='nav-sublink'>
                         <p>Marijuana</p>                
                       </Link>
                     </li>
@@ -444,43 +444,43 @@ export const Navbar = () =>{
                 {cryptoDropdown &&
                   <ul className={`nav-sublink-container `}>
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://www.coinbase.com/' target="_blank" className='nav-sublink'>
                         <p>Coinbase</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://www.investvoyager.com/'  target="_blank" className='nav-sublink'>
                         <p>Voyager</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://www.coinmama.com/' target="_blank"  className='nav-sublink'>
                         <p>Coinmama</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://www.gemini.com/' className='nav-sublink'>
                         <p>Gemini</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://www.etoro.com/' target="_blank" className='nav-sublink'>
                         <p>eToro</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://blockfi.com/'  target="_blank" className='nav-sublink'>
                         <p>BlockFi</p>                
                       </Link>
                     </li>
 
                     <li className='mb-3'>
-                      <Link className='nav-sublink'>
+                      <Link to='https://kraken.com/' target="_blank" className='nav-sublink'>
                         <p>Kraken</p>                
                       </Link>
                     </li>
@@ -699,8 +699,8 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/verification-documents/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/verification-documents/">
                           <div className="d-flex ms-3 py-2">
                             <p>Account Verification</p> 
                           </div>
@@ -716,8 +716,8 @@ export const Navbar = () =>{
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/general-fees/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/general-fees/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>General Fees</p> 
                           </div>
@@ -746,17 +746,9 @@ export const Navbar = () =>{
 
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarMarketDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/plan/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/plan/">
-                          <div className="d-flex ms-3 py-2">
-                            <p>Crude Oil</p> 
-                          </div>
-                        </Link>
-                      </li>
 
-
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/bitcoin/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/bitcoin/">
                           <div className="d-flex ms-3 py-2">
                             <p>Bitcoin</p> 
                           </div>
@@ -764,29 +756,43 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/crude-oil/") ?"client-sidebar-active-link": ""}`}>
+                        <Link  className='client-sidebar-link' to="/crude-oil/">
+                          <div className="d-flex ms-3 py-2">
+                            <p>Crude Oil</p> 
+                          </div>
+                        </Link>
+                      </li>
+
+
+
+
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/stock-indices/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/stock-indices/">
+                          <div className="d-flex ms-3 py-2">
+                            <p className='font-weight'>Stock Indicies</p> 
+                          </div>
+                        </Link>
+                      </li>
+
+
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/commodities/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/commodities/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Commodities</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/marijuana/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/marijuana/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Marijuana</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
-                          <div className="d-flex ms-3 py-2">
-                            <p className='font-weight'>Stock Indicies</p> 
-                          </div>
-                        </Link>
-                      </li>
+
 
                       
                     </ul>
@@ -845,8 +851,8 @@ export const Navbar = () =>{
       
               </li>
 
-              <li className={`pb-3 pt-1  ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+              <li className={`pb-3 pt-1  ${isActiveDashLink("/our-packages/") ?"client-sidebar-active-link": ""}`}>
+                <Link  className='client-sidebar-link' to="/our-packages/">
                   <div className="d-flex ms-3">
                     <p className=' font-size-20px'>Our Packages</p> 
                   </div>

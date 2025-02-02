@@ -148,6 +148,12 @@ import { Crypto } from './pages/information/asset/crypto';
 import { DepositMethod } from './pages/information/account/depositMethod';
 import { ClientVerifiaction } from './pages/information/account/verification';
 import { GeneralFees } from './pages/information/account/generalFees';
+import { Bitcoin } from './pages/information/markets/bitcoin';
+import { CrudeOil } from './pages/information/markets/crude';
+import { StockIndicies } from './pages/information/markets/stockIndicies';
+import { Commodities } from './pages/information/markets/commodities';
+import { Marijuana } from './pages/information/markets/marijuana';
+import { Packages } from './pages/information/packages/packages';
 
 
 
@@ -172,6 +178,15 @@ function App() {
               <Route path="/deposit-method/" element={<DepositMethod />} />
               <Route path="/verification-documents/" element={<ClientVerifiaction/>} />
               <Route path="/general-fees/" element={<GeneralFees/>} />
+              {/* Markets */}
+              <Route path="/bitcoin/" element={<Bitcoin/>} />
+              <Route path="/crude-oil/" element={<CrudeOil/>} />
+              <Route path="/stock-indices/" element={<StockIndicies/>} />
+              <Route path="/commodities/" element={<Commodities/>} />
+              <Route path="/marijuana/" element={<Marijuana/>} />
+
+              {/* Our Packages */}
+              <Route path="/our-packages/" element={<Packages/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

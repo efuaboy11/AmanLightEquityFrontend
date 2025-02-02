@@ -99,7 +99,7 @@ export const Indexes = () =>{
               <div className="col-lg-8 col-md-10">
                <p className="site-header font-weight-700 text-center pb-5">Our top index CFDs</p>
                <div className="dash-scroll-bar box-shadow-2 border-radius-5px">
-                  <table className="site-table metals-table">
+                  <table className="metals-table">
                     <thead>
                       <tr>
                         <th className="ps-5 py-2">Instrument</th>

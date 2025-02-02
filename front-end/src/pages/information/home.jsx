@@ -607,7 +607,7 @@ export const Home = () =>{
               )}
 
               <div className="d-flex justify-content-center pt-5">
-                <Link className="site-inverse-btn px-5">View All</Link>
+                <Link to='/our-packages/' className="site-inverse-btn px-5">View All</Link>
               </div>
             </div>
 

@@ -251,6 +251,14 @@ ul,  li{
   z-index: 1000;
   
 }
+
+.position-fixed1{
+  position: fixed;
+}
+
+.position-absolute1{
+  position: absolute;
+}
 .position-relative1{
   position: relative;
   z-index: 1;

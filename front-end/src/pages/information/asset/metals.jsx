@@ -97,7 +97,7 @@ export const Metals = () =>{
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
                <p className="site-header font-weight-700 text-center pb-5">Popular Spot Metals - Invest in Spot Gold and Silver</p>
-               <div className="box-shadow-2 border-radius-5px">
+               <div className="box-shadow-2 dash-scroll-bar border-radius-5px">
                 <table className="metals-table">
                   <thead>
                     <tr>

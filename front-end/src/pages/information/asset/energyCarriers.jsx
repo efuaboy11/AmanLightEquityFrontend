@@ -97,7 +97,7 @@ export const Energy = () =>{
             <div className="row justify-content-center">
               <div className="col-lg-8 col-md-10">
                <p className="site-header font-weight-700 text-center pb-5">Invest in some of the most popular spot energies such as Brent and WTI</p>
-               <div className="box-shadow-2 border-radius-5px">
+               <div className="box-shadow-2 dash-scroll-bar border-radius-5px">
                 <table className="metals-table">
                   <thead>
                     <tr>
