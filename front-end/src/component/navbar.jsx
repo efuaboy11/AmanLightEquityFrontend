@@ -494,32 +494,32 @@ export const Navbar = () =>{
                       <div className='me-5 pe-5'>
                         <p className="light-text">About Company</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/about-us/' className='nav-sublink'>
                             <p>About Us</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/contact-us/' className='nav-sublink'>
                             <p>Contact Us</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/affiliate-program/' className='nav-sublink'>
                             <p>Affiliate Programs</p>                
                           </Link>
                         </li>
 
                         <p className="light-text">Trading Condition</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/order-execution/' className='nav-sublink'>
                             <p>Order of Execution</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/margin-requirement/' className='nav-sublink'>
                             <p>Margin Requirements</p>                
                           </Link>
                         </li>
@@ -531,13 +531,13 @@ export const Navbar = () =>{
                       <div className='me-5 pe-5'>
                         <p className="light-text">Regulations</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/regulations/' className='nav-sublink'>
                             <p>Regulation Explained</p>                
                           </Link>
                         </li>
                         <p className="light-text">Transparency</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/privacy-policy/' className='nav-sublink'>
                             <p>Privacy Policy</p>                
                           </Link>
                         </li>
@@ -959,8 +959,8 @@ export const Navbar = () =>{
                   <div>
                     <ul className={` client-sidebar-dropdown-bg ${sidebarAboutDropdown ? "client-sidebar-dropdown-slide-in" : "client-sidebar-dropdown-slide-out"}`}>
                       <p className="light-text ps-3 pt-3">About Company</p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/plan/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/plan/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/about-us/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/about-us/">
                           <div className="d-flex ms-3 py-2">
                             <p>About Us</p> 
                           </div>
@@ -968,16 +968,16 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/contact-us/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/contact-us/">
                           <div className="d-flex ms-3 py-2">
                             <p>Contact Us</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/investment/history/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/investment/history/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/affiliate-program/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/affiliate-program/">
                           <div className="d-flex ms-3 py-2">
                             <p>Affilate Programs</p> 
                           </div>
@@ -985,16 +985,16 @@ export const Navbar = () =>{
                       </li>
 
                       <p className="light-text ps-3 pt-3">Trading Conditions</p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/order-execution/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/order-execution/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Order of Execution</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/margin-requirement/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/margin-requirement/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Margin Requirement</p> 
                           </div>
@@ -1002,8 +1002,8 @@ export const Navbar = () =>{
                       </li>
 
                       <p className="light-text ps-3 pt-3">Regulation</p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/regulations/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/regulations/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Regulation  Explained</p> 
                           </div>
@@ -1011,8 +1011,8 @@ export const Navbar = () =>{
                       </li>
 
                       <p className="light-text ps-3 pt-3">Transparency </p>
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/privacy-policy/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/privacy-policy/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Privacy Policy</p> 
                           </div>

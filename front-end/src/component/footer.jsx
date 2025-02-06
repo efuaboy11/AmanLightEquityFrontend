@@ -290,23 +290,25 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Buy Bitcoin</p>
                 <div className='my-2'>
-                  <Link className="footer-links">Coinbase</Link>
+                  <Link  to='https://www.coinbase.com/' target="_blank" className="footer-links">Coinbase</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Gemini</Link>
+                  <Link to='https://www.gemini.com/' target="_blank" className="footer-links">Gemini</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">BlockFi</Link>
+                  <Link to='https://blockfi.com/'  target="_blank" className="footer-links">BlockFi</Link>
+                </div>
+
+
+
+                <div className='my-2'>
+                  <Link to='https://www.etoro.com/' target="_blank" className="footer-links">eToro</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Kraken</Link>
-                </div>
-
-                <div className='my-2'>
-                  <Link className="footer-links">eToro</Link>
+                  <Link to='https://kraken.com/' className="footer-links">Kraken</Link>
                 </div>
               </div>
             </div>
@@ -315,19 +317,19 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">About Company</p>
                 <div className='my-2'>
-                  <Link className="footer-links">About us</Link>
+                  <Link to='/about-us/' className="footer-links">About us</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Contact us</Link>
+                  <Link to='/contact-us/' className="footer-links">Contact us</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Affiliate Program</Link>
+                  <Link to='/affiliate-program/' className="footer-links">Affiliate Program</Link>
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Privacy Policy</Link>
+                  <Link to='/privacy-policy/' className="footer-links">Privacy Policy</Link>
                 </div>
 
                 <div className='my-2'>

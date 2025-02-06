@@ -157,6 +157,13 @@ import { Packages } from './pages/information/packages/packages';
 import { Meta5Desktop } from './pages/information/tradingPlatform/meta5Desktop';
 import { Meta5Mobile } from './pages/information/tradingPlatform/meta5Mobile';
 import { Meta5Web } from './pages/information/tradingPlatform/meta5Web';
+import { About } from './pages/information/about/about';
+import { Contact } from './pages/information/about/contact';
+import { Affilate } from './pages/information/about/affilateProgram';
+import { OrderOfExecution } from './pages/information/about/orderOfExecution';
+import { MarginRequirement } from './pages/information/about/marginRequirement';
+import { Regulation } from './pages/information/about/regulation';
+import { PrivacyPolicy } from './pages/information/about/privacyPolicies';
 
 
 
@@ -194,6 +201,14 @@ function App() {
               <Route path="/meta5-desktop-platform/" element={<Meta5Desktop/>} />
               <Route path="/meta5-mobile-platform/" element={<Meta5Mobile/>} />
               <Route path="/meta5-web-platform/" element={<Meta5Web/>} />
+              {/* About Us */}
+              <Route path="/about-us/" element={<About/>} />
+              <Route path="/contact-us/" element={<Contact/>} />
+              <Route path="/affiliate-program/" element={<Affilate/>} />
+              <Route path="/order-execution/" element={<OrderOfExecution/>} />
+              <Route path="/margin-requirement/" element={<MarginRequirement/>} />
+              <Route path="/regulations/" element={<Regulation/>} />
+              <Route path="/privacy-policy/" element={<PrivacyPolicy/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
