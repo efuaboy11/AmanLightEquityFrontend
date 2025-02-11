@@ -191,4 +191,14 @@
     max-height: 20px;
     justify-content: center;
     
-  }
+}
+
+.site-number{
+    display: flex;
+    align-items: center;
+    min-width: 25px;
+    height: 25px;
+    justify-content: center;
+    
+}
+

@@ -269,7 +269,7 @@ export const Footer = () =>{
               <div>
                 <p className="sm-text light-text-2 font-weight-700 pb-3 uppercase">Learn To Trade</p>
                 <div className='my-2'>
-                  <Link className="footer-links">Risk Disclosure</Link>
+                  <Link to='/risk-disclosure/' className="footer-links">Risk Disclosure</Link>
                 </div>
 
                 <div className='my-2'>
@@ -333,7 +333,7 @@ export const Footer = () =>{
                 </div>
 
                 <div className='my-2'>
-                  <Link className="footer-links">Terms and Conditions</Link>
+                  <Link to='/terms-and-conditions/' className="footer-links">Terms and Conditions</Link>
                 </div>
               </div>
             </div>

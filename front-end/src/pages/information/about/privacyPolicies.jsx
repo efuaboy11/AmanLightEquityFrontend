@@ -69,7 +69,7 @@ export const PrivacyPolicy = () =>{
       <div>
         <div className="light-background2  py-2 mb-4">
           <div className="container-lg">
-            <p><Link Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / About Company  / Trading Conditions / Order of Execution</p>
+            <p><Link Link to='/' className="Link"><i class="bi bi-house"></i> Home</Link>  / About Company  / Transparency / Privacy Policy</p>
           </div>
         </div>
         <div className="container-lg pb-5 mb-4">
@@ -155,10 +155,10 @@ export const PrivacyPolicy = () =>{
               <aside className="sidebar  position-relative1">
                 <div className={`${isFixed ? 'position-fixed1': 'position-absolute1'} market-sidebar`}>
                   <div className="me-5">
-                    <Link className="market-sidebar-link market-sidebar-active-link" to='/order-execution/'>Privacy Policy</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Safety of Funds</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Risk Disclosure</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Terms and Condition</Link>
+                    <Link className="market-sidebar-link market-sidebar-active-link" to='/privacy-policy/'>Privacy Policy</Link>
+                    <Link to='/safety-funds/' className="market-sidebar-link " >Safety of Funds</Link>
+                    <Link to='/risk-disclosure/' className="market-sidebar-link " >Risk Disclosure</Link>
+                    <Link to='/terms-and-conditions/' className="market-sidebar-link " >Terms and Condition</Link>
                     <Link to='/margin-requirement/' className="market-sidebar-link " >Information Securtiy</Link>
                     <Link to='/margin-requirement/' className="market-sidebar-link " >Conflict of Interest</Link>
                     <Link to='/margin-requirement/' className="market-sidebar-link " >Complaint Procedure</Link>

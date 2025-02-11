@@ -164,6 +164,9 @@ import { OrderOfExecution } from './pages/information/about/orderOfExecution';
 import { MarginRequirement } from './pages/information/about/marginRequirement';
 import { Regulation } from './pages/information/about/regulation';
 import { PrivacyPolicy } from './pages/information/about/privacyPolicies';
+import { SafetyFunds } from './pages/information/about/safetyFunds';
+import { Risk } from './pages/information/about/riskDisclosure';
+import { TermsAndCondition } from './pages/information/about/termAndCondition';
 
 
 
@@ -209,6 +212,9 @@ function App() {
               <Route path="/margin-requirement/" element={<MarginRequirement/>} />
               <Route path="/regulations/" element={<Regulation/>} />
               <Route path="/privacy-policy/" element={<PrivacyPolicy/>} />
+              <Route path="/safety-funds/" element={<SafetyFunds/>} />
+              <Route path="/risk-disclosure/" element={<Risk/>} />
+              <Route path="/terms-and-conditions/" element={<TermsAndCondition/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
