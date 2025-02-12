@@ -27,6 +27,7 @@ import ubs from '../img/ubs.svg'
 import bankCyprus from '../img/bank-of-cyprus.svg'
 import bov from '../img/bov.svg'
 import pwc from '../img/pwc.svg'
+import logoDark from '../img/amani-dark.png'
 import marm from '../img/provider-icon12.svg'
 export const Footer = () =>{
 
@@ -37,7 +38,10 @@ export const Footer = () =>{
           <div>
             <div className="row border-bottom1 pt-5 pb-4">
               <div className="col-lg-3">
-
+                <Link className='Link' to='/'>
+                  <img src={logoDark} width='250px' alt="" />
+                
+                </Link>
               </div>
 
               <div className="col-lg-9">

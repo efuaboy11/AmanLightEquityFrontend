@@ -122,10 +122,10 @@ export const SafetyFunds = () =>{
                     <Link to='/safety-funds/' className="market-sidebar-link  market-sidebar-active-link" >Safety of Funds</Link>
                     <Link to='/risk-disclosure/' className="market-sidebar-link " >Risk Disclosure</Link>
                     <Link to='/terms-and-conditions/' className="market-sidebar-link " >Terms and Condition</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Information Securtiy</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Conflict of Interest</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Complaint Procedure</Link>
-                    <Link to='/margin-requirement/' className="market-sidebar-link " >Margin Calls</Link>
+                    <Link to='/information-security/' className="market-sidebar-link " >Information Securtiy</Link>
+                    <Link to='/interest-conflict/' className="market-sidebar-link " >Conflict of Interest</Link>
+                    <Link to='/complaints-procedure/' className="market-sidebar-link " >Complaint Procedure</Link>
+                    <Link to='/margin-calls/' className="market-sidebar-link " >Margin Calls</Link>
 
                     
                   </div>

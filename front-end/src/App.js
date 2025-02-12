@@ -167,6 +167,10 @@ import { PrivacyPolicy } from './pages/information/about/privacyPolicies';
 import { SafetyFunds } from './pages/information/about/safetyFunds';
 import { Risk } from './pages/information/about/riskDisclosure';
 import { TermsAndCondition } from './pages/information/about/termAndCondition';
+import { InformationSecurity } from './pages/information/about/informationSecurity';
+import { InterestConflict } from './pages/information/about/interestConflict';
+import { CompliantProcedure } from './pages/information/about/compliantProcedure';
+import { MarginCalls } from './pages/information/about/marginCalls';
 
 
 
@@ -215,6 +219,10 @@ function App() {
               <Route path="/safety-funds/" element={<SafetyFunds/>} />
               <Route path="/risk-disclosure/" element={<Risk/>} />
               <Route path="/terms-and-conditions/" element={<TermsAndCondition/>} />
+              <Route path="/information-security/" element={<InformationSecurity/>} />
+              <Route path="/interest-conflict/" element={<InterestConflict/>} />
+              <Route path="/complaints-procedure/" element={<CompliantProcedure/>} />
+              <Route path="/margin-calls/" element={<MarginCalls/>} />
               {/* ----------------------------------- SIGN UP / IN ---------------------------------- */}
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />

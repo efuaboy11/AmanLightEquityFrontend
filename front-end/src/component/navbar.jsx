@@ -8,6 +8,7 @@ import { use } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleRight, faBarsStaggered, faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
 import AuthContext from '../context/AuthContext'
+import logoDark from '../img/amani-light.png'
 export const Navbar = () =>{
 
   const { authTokens, 
@@ -212,8 +213,12 @@ export const Navbar = () =>{
       <div className="nav-shadow nav-bar">
         <div className="mx-3 width-100">
           <div className='nav-laptop-screen'>
-            <div className="row justify-content-between py-4">
+            <div className="row justify-content-between align-center py-4">
               <div className="col-2">
+                <Link className='Link' to='/'>
+                  <img src={logoDark} width='95%' alt="" />
+                
+                </Link>
 
               </div>
 
@@ -296,9 +301,12 @@ export const Navbar = () =>{
           </div>
 
           <div className="nav-responsive px-1">
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-between align-center">
               <div>
-                <img src="" alt="" />
+                <Link className='Link' to='/'>
+                  <img src={logoDark} width='200px' alt="" />
+                
+                </Link>
               </div>
 
               <div onClick={toggleClientSidebar}>
@@ -566,25 +574,25 @@ export const Navbar = () =>{
                       <div>
                         <p>...</p>
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/information-security/' className='nav-sublink'>
                             <p>Information Security</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/interest-conflict/' className='nav-sublink'>
                             <p>Conflit of Interest</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/complaints-procedure/' className='nav-sublink'>
                             <p>Complaint Procedure</p>                
                           </Link>
                         </li>
 
                         <li className='mb-3'>
-                          <Link className='nav-sublink'>
+                          <Link to='/margin-calls/' className='nav-sublink'>
                             <p>Margin Calls</p>                
                           </Link>
                         </li>
@@ -1044,24 +1052,24 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/information-security/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/information-security/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Information Security</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/interest-conflict/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/interest-conflict/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Conflit of Interest</p> 
                           </div>
                         </Link>
                       </li>
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/complaints-procedure/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/complaints-procedure/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Complaint Procedure</p> 
                           </div>
@@ -1069,8 +1077,8 @@ export const Navbar = () =>{
                       </li>
 
 
-                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/dashboard/market-chart/") ?"client-sidebar-active-link": ""}`}>
-                        <Link className='client-sidebar-link' to="/dashboard/market-chart/">
+                      <li className={`client-sidebar-dropdown-link ${isActiveDashLink("/margin-calls/") ?"client-sidebar-active-link": ""}`}>
+                        <Link className='client-sidebar-link' to="/margin-calls/">
                           <div className="d-flex ms-3 py-2">
                             <p className='font-weight'>Margin Calls</p> 
                           </div>
